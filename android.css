@@ -1,0 +1,7 @@
+.nav-item {
+  font-size: 18px;
+  flex-direction: column;
+}
+#title {
+  font-size: large;
+}
