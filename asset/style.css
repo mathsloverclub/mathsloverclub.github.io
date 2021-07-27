@@ -1,0 +1,126 @@
+:root {
+  --header-height: 50px;
+  --main-bg-color: #292f33;
+  --header-bg-color: #66757f;
+  --color: #e1e8ed;
+}
+* {
+  box-sizing: border-box;
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-top: var(--header-height);
+  background-color: var(--main-bg-color);
+  color: var(--color);
+}
+.svg_icons {
+  width: 24px;
+  height: 24px;
+  fill: var(--color);
+}
+.slides {
+  padding: 15px 5vw;
+}
+.slides > h2 {
+  color: #f1f1f1;
+  font-size: 1.2em;
+}
+mjx-container {
+  overflow-y: scroll;
+}
+/* a - header */
+header {
+  width: 100vw;
+  height: var(--header-height);
+  padding: 12px 15px;
+  position: fixed;
+  z-index: 100; /*To fix mathjax displayed over header*/
+  top: 0;
+  background-color: var(--header-bg-color);
+  /* box-shadow: 0 0 1px #bbb, 0 0 2px #ddd, 0 0 4px #fff; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* a - 1/2- title */
+#title {
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  color: var(--header-bg-color);
+  position: relative;
+  text-decoration: none;
+  -webkit-text-stroke: 0.4px #242424;
+}
+#title:before {
+  content: attr(data-text);
+  color: var(--color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  border-right: 2px solid var(--color);
+  overflow: hidden;
+  background-color: var(--header-bg-color);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  75%,
+  90% {
+    width: 100%;
+  }
+}
+/* NAV */
+#nav_overlay {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
+#nav_box {
+  position: fixed;
+  top: var(--header-height);
+  right: 0;
+
+  width: auto;
+  max-width: 500px;
+  transform: translateX(100vw);
+  z-index: 101;
+}
+#nav_box.nav_box_opened {
+  transform: translateX(0);
+}
+.nav_items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: #516579;
+  text-decoration: none;
+  color: inherit;
+}
+.nav_items > svg {
+  margin-right: 15px;
+}
+.nav_items:hover {
+  background-color: #314559;
+}
+
+.nav_items_child {
+  width: 100%;
+}
