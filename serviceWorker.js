@@ -35,7 +35,7 @@ self.onfetch = (e) => {
         //Make copy/clone of response
         const resClone = res.clone();
         caches.open(myCacheName).then((cache) => {
-          cache.add(resClone);
+          cache.put(e.request, resClone);
           console.log("successfully cached");
         });
         return res;
