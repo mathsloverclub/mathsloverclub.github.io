@@ -1,6 +1,7 @@
 #This is help for using git
 
-#how to check if git is installed on your laptop
+##how to check if git is installed on your laptop
+
 start command prompt and type this command
 ###git --version
 if you get the message like (git version 2.27.0.windows.1), git has been installed on your computer.
