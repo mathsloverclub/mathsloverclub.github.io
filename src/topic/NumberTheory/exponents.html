@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" ontent="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primitive Roots</title>
+    <!-- <link rel="stylesheet" href="/asset/style.css" /> -->
+    <!-- <script>
+      MathJax = {
+        tex: {
+          inlineMath: [["$", "$"]],
+        },
+        svg: {
+          fontCache: "global",
+        },
+      };
+    </script>
+    <script src="/mathjax/es5/tex-svg.js" id="MathJax-script" defer></script> -->
+  </head>
+  <body>
+    <!-- <script src="/script/container.js"></script> -->
+    <%= require('html-loader!./../../header_nav.html').default %>
+    <p>
+      I haven't written anything about Exponents. I'm testing Theme changing
+      here
+    </p>
+    <form action="">
+      <label for="theme">Choose color scheme for your theme.</label>
+      <select name="theme" id="theme">
+        <option value="System">System</option>
+        <option value="light">light</option>
+        <option value="dark">Dark</option>
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+      </select>
+      <input type="button" value="Cancel" id="cancel" />
+      <input type="button" id="ok" value="OK" />
+    </form>
+    <!-- <script>
+      // if(window.localStorage.getItem("setting") === null){
+
+      // }
+
+      class color_scheme {
+        constructor(key, main_bgcolor, header_bgcolor) {
+          this.key = key;
+          this.main_bg = main_bgcolor;
+          this.header_bg = header_bgcolor;
+        }
+      }
+      const dark = new color_scheme("default", "#000", "#444");
+      document.getElementById("ok").onclick = function () {
+        document
+          .querySelector(":root")
+          .style.setProperty("--main-bg-color", dark.main_bg);
+      };
+      document.getElementById("cancel").onclick = () => {
+        console.log(window.location.pathname);
+      };
+    </script> -->
+    <%= require('html-loader!./../../footer.html').default %>
+  </body>
+</html>

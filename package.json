@@ -1,0 +1,27 @@
+{
+  "name": "maths",
+  "version": "1.0.0",
+  "description": "This website is my dream maths website.",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "path": "^0.12.7",
+    "remove-files-webpack-plugin": "^1.4.5",
+    "webpack": "^5.50.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "start:serve": "./node_modules/.bin/webpack server",
+    "server": "node server.js",
+    "dev": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
