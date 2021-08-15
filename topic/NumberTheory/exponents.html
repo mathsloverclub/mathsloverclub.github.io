@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" ontent="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exponents</title>
-    <link rel="stylesheet" href="/asset/style.css" />
-    <script>
+    <title>Primitive Roots</title>
+    <!-- <link rel="stylesheet" href="/asset/style.css" /> -->
+    <!-- <script>
       MathJax = {
         tex: {
           inlineMath: [["$", "$"]],
@@ -16,14 +16,11 @@
         },
       };
     </script>
-    <script
-      src="/mathjax/es5/tex-svg.js"
-      id="MathJax-script"
-      defer
-    ></script>
+    <script src="/mathjax/es5/tex-svg.js" id="MathJax-script" defer></script> -->
   </head>
   <body>
-    <script src="/script/container.js"></script>
+    <!-- <script src="/script/container.js"></script> -->
+    <%= require('html-loader!./../../header_nav.html').default %>
     <p>
       I haven't written anything about Exponents. I'm testing Theme changing
       here
@@ -38,10 +35,10 @@
         <option value="green">green</option>
         <option value="blue">blue</option>
       </select>
-      <input type="button" value="Cancel" onclick="alert('hi')" />
+      <input type="button" value="Cancel" id="cancel" />
       <input type="button" id="ok" value="OK" />
     </form>
-    <script>
+    <!-- <script>
       // if(window.localStorage.getItem("setting") === null){
 
       // }
@@ -59,6 +56,10 @@
           .querySelector(":root")
           .style.setProperty("--main-bg-color", dark.main_bg);
       };
-    </script>
+      document.getElementById("cancel").onclick = () => {
+        console.log(window.location.pathname);
+      };
+    </script> -->
+    <%= require('html-loader!./../../footer.html').default %>
   </body>
 </html>

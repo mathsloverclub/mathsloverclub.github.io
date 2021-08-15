@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="./asset/style.css" />
+    <title>Primitive Roots</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
   </head>
   <body>
-    <script src="./script/container.js"></script>
-
+<%= require('html-loader!./header_nav.html').default %>
     <ul>Written Articles
       <li><a href="./topic/NumberTheory/trick.html">Tricks to solve linear Diophantine Equation</a></li>
-      <li><a href="./topic//NumberTheory/exponents.html">Exponents</a></li>
+      <li>In <a href="./topic/NumberTheory/exponents.html">Exponents</a> page, I'm currently working for <a href="#theme">Theme</a>. </li>
+      <li>In <a href="./topic/NumberTheory/primitiveRoots.html">Primitive Roots</a> page, I'm currently working for install button. On clicking that button, PWA will be installed.</li>
     </ul>
 
     <h1>Important To Fix (Bugs)</h1>
@@ -22,7 +22,11 @@
 
     <h1>To Do list</h1>
 
-    <h2>Theme</h2>
+    <h2>Newsletter and share icon</h2>
+
+    <p>Add Newsletter icon and share icon similar to <a href="web.dev">Web.dev</a></p>
+
+    <h2 id="theme">Theme</h2>
     <p>
       There are many selectable themes (including dark and light theme) and
       custom theme.
@@ -50,5 +54,7 @@
     <p>
       user can click a button(buttom name may be "play as video" or 'read aloud') to read aloud when user is lazy to read or difficult to read the text.
     </p>
+    <%= require('html-loader!./footer.html').default %>
   </body>
-</html>
+
+  </html>

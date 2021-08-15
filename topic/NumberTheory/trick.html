@@ -4,12 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#00ff00" />
     <title>Tricks in Number Theory</title>
-    <link rel="stylesheet" href="/asset/style.css" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="apple-touch-icon" href="/icon.png" />
-    <script>
+    <!-- <script>
       MathJax = {
         tex: {
           inlineMath: [["$", "$"]],
@@ -23,11 +19,12 @@
       type="text/javascript"
       id="MathJax-script"
       async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-    ></script>
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+    ></script> -->
   </head>
   <body>
-    <script src="/script/container.js"></script>
+    <%= require('html-loader!./../../header_nav.html').default %>
+    <!-- <script src="/script/container.js"></script> -->
 
     <div class="slides">
       <h2>Divide</h2>
@@ -101,5 +98,6 @@
         $
       </p>
     </div>
+    <%= require('html-loader!./../../footer.html').default %>
   </body>
 </html>
