@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="e">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" ontent="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primitive Roots</title>
+  </head>
+  <body>
+    <!-- <script src="/script/container.js"></script> -->
+    <%= require('html-loader!./../../header_nav.html').default %>
+    <button id="instal">Install</button>
+    <!-- <script>
+      const installBtn = document.getElementById("instal");
 
+      const css = document.createElement("link");
+      css.rel = "stylesheet";
+      document.head.appendChild(css);
+
+      function set(obj, asset) {
+        caches.open("Asset Files v1").then((cache) => {
+          cache.match(asset).then((res) => {
+            if (res) obj.href = res.url;
+          });
+        });
+      }
+      installBtn.addEventListener("click", () => {
+        set(css, "/asset/style.css");
+        //   document.head.innerHTML += `<link rel="manifest" href="/manifest.json" />
+        //   <link rel="apple-touch-icon" href="/icon.png" />
+        //   <meta name="theme-color" content="#292f33" />`;
+      });
+    </script> -->
+    <%= require('html-loader!./../../footer.html').default %>
+  </body>
+</html>
