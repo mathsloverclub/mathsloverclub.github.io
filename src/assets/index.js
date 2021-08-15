@@ -1,3 +1,4 @@
+import css from "./style.css";
 // const sprite = "/asset/icons_sprite.svg";
 // //predefined functions
 // const createNode = function (nodeName, idName, className) {

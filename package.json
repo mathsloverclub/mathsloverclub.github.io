@@ -13,12 +13,13 @@
   },
   "devDependencies": {
     "css-loader": "^6.2.0",
+    "style-loader": "^3.2.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
     "start:serve": "./node_modules/.bin/webpack server",
-    "server": "node server.js",
+    "start:server": "node server.js",
     "dev": "webpack"
   },
   "keywords": [],
