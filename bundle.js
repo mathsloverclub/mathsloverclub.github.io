@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.getElementById("menu"),t=document.getElementById("nav_overlay"),n=document.getElementById("nav_box");e.onclick=function(){t.style.visibility="visible",n.classList.toggle("nav_box_opened")},t.onclick=function(){t.style.visibility="hidden",n.classList.toggle("nav_box_opened")}})();
